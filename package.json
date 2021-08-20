@@ -4,7 +4,9 @@
   "description": "Realtime Chat app with rooms",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/Smeks-ops/room-chat/issues"
   },
-  "homepage": "https://github.com/Smeks-ops/room-chat#readme"
+  "homepage": "https://github.com/Smeks-ops/room-chat#readme",
+  "dependencies": {
+    "consola": "^2.15.3",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^4.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
