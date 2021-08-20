@@ -65,4 +65,4 @@ io.on('connection', socket => {
 
 const PORT = 3000 || process.env.PORT
 
-server.listen(PORT, () => consola.success(`Server running on port ${PORT}`))
+server.listen(process.env.PORT || PORT, () => consola.success(`Server running on port ${PORT}`))
